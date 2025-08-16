@@ -1,3 +1,16 @@
 spring:
   application:
     name: springboot-task-app
+  datasource:
+    url: jdbc:postgresql://localhost:5432/springboot_task_app
+    username: username
+    password: password
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  docker:
+    compose:
+      enabled: false

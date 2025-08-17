@@ -10,5 +10,5 @@ data class CreateTaskRequest(
     @field:NotBlank(message = "Description cannot be blank")
     val description: String,
 
-    val priority: Priority? = null
+    val priority: Priority? = Priority.MEDIUM
 )

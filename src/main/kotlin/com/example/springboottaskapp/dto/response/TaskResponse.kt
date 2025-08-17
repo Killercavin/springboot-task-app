@@ -8,7 +8,7 @@ data class TaskResponse(
     val id: Long,
     val title: String,
     val description: String,
-    val priority: Priority,
+    val priority: Priority?,
     val createdAt: LocalDateTime?,
     val updatedAt: LocalDateTime?
 )

@@ -23,7 +23,7 @@ data class Task(
 
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
-    var priority: Priority = Priority.MEDIUM,
+    var priority: Priority? = Priority.MEDIUM,
 
     @CreationTimestamp
     @Column(nullable = false, updatable = false)
